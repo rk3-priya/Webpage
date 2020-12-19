@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container w-50 py-4 px-1 my-5 border border-secondary rounded">
+        <form class="container w-75" action="#">
+            <div class="row mb-3">
+                <div class="col-sm-3">
+                <label class="control-label" for="fname">First Name:</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="lname">Last Name:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="addr">Address:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="addr" placeholder="Address" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="city">City:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="city" placeholder="City" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="state">State:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="state" placeholder="State" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="country">Country:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="country" placeholder="Country" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="zipcode">Zipcode:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="zipcode" placeholder="Zipcode" 
+                        pattern="[0-9]+" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="email">Email:</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" id="email" placeholder="Email" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="control-label col-sm-3" for="contact">Contact:</label>
+                <div class="col-sm-6">
+                    <input type="tel" class="form-control" id="contact" placeholder="123-456-7890" 
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="submit" class="col-sm-4 offset-sm-2 btn btn-primary border border-secondary rounded">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
